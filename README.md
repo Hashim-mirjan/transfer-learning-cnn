@@ -33,18 +33,12 @@ Only the final classification layer is retrained to adapt the model to the fruit
 
 To evaluate the effect of model architecture, both AlexNet and GoogLeNet were tested using the same training pipeline, including:
 
-- identical preprocessing and augmentation
+- Identical preprocessing and augmentation
 - the same train-validation split
 - the same batch size and number of epochs
 - the same optimizer
 
-A baseline comparison was first carried out using the same learning rate for both models.
-
-However, I observed that GoogLeNet required a higher learning rate to train effectively, which is consistent with deeper architectures being more sensitive to optimisation settings.
-
-Therefore, I varied learning rates for GoogleNet and tested again for better convergence.
-
-This allowed for both a controlled comparison between architectures and a more realistic evaluation of each model under appropriate training conditions  
+A baseline comparison was first carried out using the same learning rate for both models. However, I observed that GoogLeNet required a higher learning rate to train effectively, which is consistent with deeper architectures being more sensitive to optimisation settings. Therefore, I varied learning rates for GoogleNet and tested again for better convergence. This allowed for both a controlled comparison between architectures and a more realistic evaluation of each model under appropriate training conditions  
 
 ## Additional Experiments
 

@@ -1,4 +1,4 @@
-# Fruit Image classifier using Transfer Learning (AlexNet, PyTorch)
+# Fruit Image classifier using Transfer Learning (PyTorch)
 
 This project implements an image classification pipeline using transfer learning with a pretrained convolutional neural network (AlexNet) in PyTorch.
 

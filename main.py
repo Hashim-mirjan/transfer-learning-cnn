@@ -5,7 +5,7 @@ from src.utils import plot_accuracy, plot_confusion_matrix
 
 from torchsummary import summary
 
-EPOCHS = 15
+EPOCHS = 16
 
 def main():
     datastore = load_dataset()

@@ -12,12 +12,17 @@ This approach is particularly useful when working with smaller datasets, as it r
 
 The workflow consists of:
 
-- Loading image data using
+- Loading image data
 - Applying preprocessing and augmentation (resize, normalization, rotation) for generalization
 - Splitting data into training and validation sets (70/30)
 - Using a pretrained **AlexNet** model
 - Replacing the final classification layer to match our dataset
 - Training the model and evaluating on a validation set
+
+This image preview shows what the training images look like. they have been normalized and rotated, hence the grainy, saturated appearance. This is key for more stable training and better generalization.
+
+<img width="1794" height="560" alt="image" src="https://github.com/user-attachments/assets/045d3c01-fec6-4a3d-a321-ed4bbb467f38" />
+
 
 ## Transfer Learning Strategy
 
@@ -31,11 +36,12 @@ The model performance is evaluated using:
 - Confusion matrix
 
 ### Accuracy
-![Accuracy Plot](outputs/accuracy_plot.png)
+
+<img width="918" height="702" alt="image" src="https://github.com/user-attachments/assets/869db750-e09c-46e5-b02c-e9232b8e3073" />
 
 ### Confusion Matrix
-![Confusion Matrix](outputs/confusion_matrix.png)
 
+<img width="1136" height="946" alt="image" src="https://github.com/user-attachments/assets/291d1bb7-b034-4da4-93d5-8055fc211ded" />
 
 ## How to run
 

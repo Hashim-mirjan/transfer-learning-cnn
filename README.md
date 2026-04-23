@@ -12,12 +12,12 @@ This approach is particularly useful when working with smaller datasets, as it r
 
 The workflow consists of:
 
-- Loading image data
-- Applying preprocessing and augmentation (resize, normalization, rotation) for generalization
-- Splitting data into training and validation sets (70/30)
-- Using a pretrained **AlexNet** model
-- Replacing the final classification layer to match our dataset
-- Training the model and evaluating on a validation set
+- Loading image data  
+- Applying preprocessing and augmentation (resize, normalization, rotation) for generalisation  
+- Splitting data into training and validation sets (70/30)  
+- Using pretrained CNN models (AlexNet and GoogLeNet)  
+- Replacing the final classification layer to match the dataset  
+- Training the model and evaluating on a validation set 
 
 This image preview shows what the training images look like. they have been normalized and rotated, hence the grainy, saturated appearance. This is key for more stable training and better generalization.
 <img width="1281" height="400" alt="image" src="https://github.com/user-attachments/assets/045d3c01-fec6-4a3d-a321-ed4bbb467f38" />
@@ -25,7 +25,9 @@ This image preview shows what the training images look like. they have been norm
 
 ## Transfer Learning Strategy
 
-The pretrained convolutional layers are frozen, meaning their weights are not updated during training. These layers act as a feature extractor so they help to identify things like edges in the images.
+The pretrained convolutional layers are frozen, meaning their weights are not updated during training. These layers act as a feature extractor so they help to identify things like edges and textures in the images.
+Only the final classification layer is retrained to adapt the model to the fruit classification task.
+
 
 ## Model Comparison
 
@@ -44,6 +46,13 @@ Therefore, I varied learning rates for GoogleNet and tested again for better con
 
 This allowed for both a controlled comparison between architectures and a more realistic evaluation of each model under appropriate training conditions  
 
+## Additional Experiments
+
+Additional experiments were carried out to explore different training configurations.
+
+- Compared different optimizers (Adam and RMSprop), which showed similar performance on this task
+- Compared different batch sizes for training to balance training speed and stability    
+
 ## Results
 
 The model performance is evaluated using:
@@ -54,9 +63,9 @@ The model performance is evaluated using:
 ### Accuracy
 
 <p align="center">
-  <b>AlexNet (LR = 0.0001)</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>AlexNet (LR = 0.0001)   </b>&nbsp;&nbsp;&nbsp;&nbsp;
   <b>GoogLeNet (LR = 0.0001)</b>&nbsp;&nbsp;&nbsp;&nbsp;
-  <b>GoogLeNet (LR = 0.01)</b>
+  <b>   GoogLeNet (LR = 0.01)</b>
 </p>
 
 <p align="center">

@@ -20,8 +20,7 @@ The workflow consists of:
 - Training the model and evaluating on a validation set
 
 This image preview shows what the training images look like. they have been normalized and rotated, hence the grainy, saturated appearance. This is key for more stable training and better generalization.
-
-<img width="1794" height="560" alt="image" src="https://github.com/user-attachments/assets/045d3c01-fec6-4a3d-a321-ed4bbb467f38" />
+<img width="1281" height="400" alt="image" src="https://github.com/user-attachments/assets/045d3c01-fec6-4a3d-a321-ed4bbb467f38" />
 
 
 ## Transfer Learning Strategy
@@ -37,11 +36,11 @@ The model performance is evaluated using:
 
 ### Accuracy
 
-<img width="918" height="702" alt="image" src="https://github.com/user-attachments/assets/869db750-e09c-46e5-b02c-e9232b8e3073" />
+<img width="588" height="450" alt="image" src="https://github.com/user-attachments/assets/869db750-e09c-46e5-b02c-e9232b8e3073" />
 
 ### Confusion Matrix
 
-<img width="1136" height="946" alt="image" src="https://github.com/user-attachments/assets/291d1bb7-b034-4da4-93d5-8055fc211ded" />
+<img width="720" height="600" alt="image" src="https://github.com/user-attachments/assets/291d1bb7-b034-4da4-93d5-8055fc211ded" />
 
 ## How to run
 
